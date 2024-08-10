@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div id="firstTable">
+            <div class="form1">
+                <h2>Root</h2>
+                <span id="plus" data-bs-target="#modalId" data-bs-toggle="modal" class="bi bi-plus-square"></span>
+            </div>
+            <div>
+                <table class="table table-hover border">
+                    <tbody>
+                        <tr id="firstId" onclick="firstAdd()">
+                            <th style="display: grid;">Directory-A
+                                <div>
+                                    <span class="bi bi-book"> 3</span>
+                                    <span class="bi bi-folder"> 4</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger" onclick="firstDelete()"><span class="bi bi-trash"></span></button>
+                                <button class="btn btn-primary" title="No. of folder: 4 ,No. of file: 3">
+                                    <span class="firstInfo bi bi-info-circle"></span>
+                                </button>
+                            </th>   
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-B
+                                <div>
+                                    <span class="bi bi-book"> 4</span>
+                                    <span class="bi bi-folder"> 6</span>
+                                </div>
+                            </th>
+                            <div>
+                                <th>
+                                    <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                    <button title="No. of folder: 6 ,No. of file: 4"  class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                                </th>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="secondTable">
+            <div class="form2">
+                <h2>Directory-A</h2>
+                <span id="plus" data-bs-target="#modalId" data-bs-toggle="modal" class="bi bi-plus-square"></span>
+            </div>
+            <div>
+                <table class="table table-hover border">
+                    <tbody>
+                        <tr onclick="secondAdd()">
+                            <th style="display: grid;">Directory-AA
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 3</span>
+                                </div>
+                            </th>
+                            <div>
+                                <th>
+                                    <button onclick="secondDelete()" class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                    <button title="No. of folder: 3 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                                </th> 
+                            </div>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AB
+                                <div>
+                                    <span class="bi bi-book"> 4</span>
+                                    <span class="bi bi-folder"> 2</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 2 ,No. of file: 4" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AC
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="thirdTable">
+            <div class="form3">
+                <h2>Directory-AA</h2>
+                <span id="plus" data-bs-target="#modalId" data-bs-toggle="modal" class="bi bi-plus-square"></span>
+            </div>
+            <div>
+                <table class="table table-hover border">
+                    <tbody>
+                        <tr onclick="thirdClick()">
+                            <th style="display: grid;">Directory-AA1
+                                <div>
+                                    <span class="bi bi-book"> 5</span>
+                                    <span class="bi bi-folder"> 7</span>
+                                </div>
+                            </th>
+                            <div>
+                                <th>
+                                    <button onclick="thirdDelete()" class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                    <button title="No. of folder: 7 ,No. of file: 5" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                                </th> 
+                            </div>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA2
+                                <div>
+                                    <span class="bi bi-book"> 4</span>
+                                    <span class="bi bi-folder"> 2</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 2 ,No. of file: 4" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA3
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA4
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA5
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA6
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AC
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="forthTable">
+            <div class="form4">
+                <h2>Directory-AA1</h2>
+                <span id="plus" data-bs-target="#modalId" data-bs-toggle="modal" class="bi bi-plus-square"></span>
+            </div>
+            <div>
+                <table class="table table-hover border">
+                    <tbody>
+                        <tr>
+                            <th style="display: grid;">Directory-AA1
+                                <div>
+                                    <span class="bi bi-book"> 2</span>
+                                    <span class="bi bi-folder"> 1</span>
+                                </div>
+                            </th>
+                            <div>
+                                <th>
+                                    <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                    <button title="No. of folder: 1 ,No. of file: 2" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                                </th> 
+                            </div>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA2
+                                <div>
+                                    <span class="bi bi-book"> 1</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 1" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA3
+                                <div>
+                                    <span class="bi bi-book"> 2</span>
+                                    <span class="bi bi-folder"> 4</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 4 ,No. of file: 2" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA5
+                                <div>
+                                    <span class="bi bi-book"> 4</span>
+                                    <span class="bi bi-folder"> 7</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 7 ,No. of file: 4" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="display: grid;">Directory-AA6
+                                <div>
+                                    <span class="bi bi-book"> 7</span>
+                                    <span class="bi bi-folder"> 5</span>
+                                </div>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger"><span class="bi bi-trash"></span></button>
+                                <button title="No. of folder: 5 ,No. of file: 7" class="btn btn-primary"><span class="bi bi-info-circle"></span></button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </div>
+
+    <div class="modal fade" id="modalId">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex">
+                    <h3>Add</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addForm" onsubmit="handleAddClick(event)">
+                        <h2>Add New</h2>
+                        <div class="form-group">
+                          <label>Type :
+                            <input type="radio" name="select" value="file" required>
+                            File
+                          </label>
+                          <label>   
+                            <input type="radio" name="select" value="directory">
+                            Directory
+                          </label>
+                        </div>
+                        <div class="form-group mt-3">
+                          <label for="name-input">Name:</label>
+                          <input type="text" id="name-input" name="name" required>
+                        </div>
+                        <footer class="mt-4">
+                          <button class="btn btn-success" type="submit">Add</button>
+                          <button class="btn btn-danger" type="button" data-bs-dismiss="modal" id="cancel-dialog-btn">Cancel</button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
